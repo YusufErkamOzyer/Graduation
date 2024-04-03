@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/nav_menu_item_home_fragment"
+        android:icon="@drawable/ic_home"
+        />
+    <item
+        android:id="@+id/programFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/nav_menu_item_program_fragment"
+        android:icon="@drawable/ic_calendar"
+        />
+    <item
+        android:id="@+id/settingsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/nav_menu_item_program_fragment"
+        android:icon="@drawable/ic_settings"
+        />
+</menu>

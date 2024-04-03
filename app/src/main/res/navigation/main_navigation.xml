@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.yusuferkamozyer.graduation.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_programFragment"
+            app:destination="@id/programFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/programFragment"
+        android:name="com.yusuferkamozyer.graduation.presentation.program.ProgramFragment"
+        android:label="fragment_program"
+        tools:layout="@layout/fragment_program" >
+        <action
+            android:id="@+id/action_programFragment_to_reviewPlanFragment"
+            app:destination="@id/reviewPlanFragment" />
+        <action
+            android:id="@+id/action_programFragment_to_createProgramFragment"
+            app:destination="@id/createProgramFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.yusuferkamozyer.graduation.preferences.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/reviewPlanFragment"
+        android:name="com.yusuferkamozyer.graduation.preferences.ReviewPlanFragment"
+        android:label="fragment_review_plan"
+        tools:layout="@layout/fragment_review_plan" />
+    <fragment
+        android:id="@+id/createProgramFragment"
+        android:name="com.yusuferkamozyer.graduation.presentation.program.advanceprogram.CreateProgramFragment"
+        android:label="fragment_create_program"
+        tools:layout="@layout/fragment_create_program">
+        <argument
+            android:name="selectedList"
+            app:argType="com.yusuferkamozyer.graduation.presentation.program.model.AppItem[]" />
+    </fragment>
+</navigation>
