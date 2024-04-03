@@ -2,7 +2,6 @@ package com.yusuferkamozyer.graduation.util
 
 import android.content.Context
 import android.content.pm.ApplicationInfo
-import android.content.pm.PackageManager
 import android.os.Build
 import androidx.annotation.RequiresApi
 import com.yusuferkamozyer.graduation.model.AppList
@@ -12,11 +11,9 @@ class AppUtil(private val context: Context) {
     fun getApplicationsList(): ArrayList<AppList> {
         val appList = arrayListOf<AppList>()
         val packageManager = context.packageManager
-<<<<<<< HEAD
-        val apps = packageManager.getInstalledApplications(PackageManager.GET_META_DATA)
-=======
+        
         val apps = packageManager.getInstalledApplications(0)  //PackageManager.GET_META_DATA
->>>>>>> 2fc6143 (Initial commit)
+
         for (app in apps) {
             val appName = app.loadLabel(packageManager).toString()
             val packageName = app.packageName
