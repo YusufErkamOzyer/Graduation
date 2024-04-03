@@ -14,11 +14,16 @@
     <string name="permission_need">We Need Your Permission</string>
     <string name="navigate_to_settings">Go to The Settings</string>
     <string name="permission_info_box">You must allow this feature to be used.</string>
+    <string name="permission_info_text_app_block">This permission will allow us to block your selected applications</string>
+    <string name="permission_info_text_usage_track">This permission will allow us to track your selected applications</string>
     <string name="cancel">Cancel</string>
     <string name="set_program">Set Program</string>
-    <string name="date_info">Input Date</string>
-    <string name="hour_info">Input Hour</string>
-    <string name="minute_info">Input Minute</string>
+    <string name="date_info">Date</string>
+    <string name="day_info">Day</string>
+    <string name="hour_info">Hour</string>
+    <string name="minute_info">Minute</string>
+    <string name="two_point">:</string>
+    <string name="default_time">00</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>

@@ -85,6 +85,7 @@ dependencies {
 
     //3rd implementation
     implementation ("com.androidplot:androidplot-core:1.5.10")
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
 }
 kapt {
     correctErrorTypes = true

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Bilgilendirici metin -->
+        <TextView
+            android:id="@+id/textViewInfoUsageTrackerAppBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="@string/permission_info_text_app_block"
+            android:textSize="18sp" />
+
+        <!-- İzin verme butonu -->
+        <Button
+            android:id="@+id/buttonGrantPermissionAppBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewInfoUsageTrackerAppBlock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="İzin Ver" />
+        <ImageView
+            android:id="@+id/accessButtonAppBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/access_needed" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Bilgilendirici metin -->
+        <TextView
+            android:id="@+id/textViewInfoUsageTracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="@string/permission_info_text_usage_track"
+            android:textSize="18sp" />
+
+        <!-- İzin verme butonu -->
+        <Button
+            android:id="@+id/buttonGrantPermissionUsageTracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewInfoUsageTracker"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="İzin Ver" />
+
+        <ImageView
+            android:id="@+id/accessButtonUsageTracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/access_needed" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/goToMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        android:text="GO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

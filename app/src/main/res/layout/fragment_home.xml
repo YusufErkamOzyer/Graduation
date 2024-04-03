@@ -13,15 +13,24 @@
         android:layout_height="0dp"
         android:layout_weight="12">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/usedAppRecyclerView"
-            android:layout_width="296dp"
-            android:layout_height="557dp"
-            android:layout_marginTop="84dp"
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart2"
+            android:layout_width="201dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="38dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usedAppRecyclerView"
+            android:layout_width="252dp"
+            android:layout_height="345dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pieChart2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
